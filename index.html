@@ -8,15 +8,289 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
-<!-- BEGIN  out-->
-<div class="out">
+<!-- BEGIN .header -->
+<header class="header">
+	<div class="wrapper">
+		<div class="header__top">
+			<div class="header__log">
+				<button class="btn btn_log">Login</button> 
+				<a href="#">Signup</a>
+			</div>
+			<div class="header__price">Bitcoin Market Price:<span>$237.36</span></div>
+			<div class="header__price">Pooi Hashrate<span>541.84 Th/s</span></div>
+		</div>
+		<div class="header__bot">
+			<a href="#" class="header__logo">
+				<i></i>
+				<div class="header__company">CloudyCoin</div>
+				<div class="header__company_bot">cloud Mining Company</div>
+			</a>
+			<!-- BEGIN .menu -->
+			<ul class="menu">
+				<li>
+					<a href="#">Home</a><i></i>
+					<ul class="menu__list">
+						<li class="menu__item menu__item_t"><a href="#">How it Works</a></li>
+						<li class="menu__item menu__item_t"><a href="#">About</a></li>
+						<li class="menu__item"><a href="#">Silver Account</a></li>
+						<li class="menu__item"><a href="#">Gold Account</a></li>
+						<li class="menu__item"><a href="#">Platinum Account</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="is-active">How It Works</a><i></i>
+					<ul class="menu__list">
+						<li class="menu__item menu__item_t"><a href="#">How it Works</a></li>
+						<li class="menu__item menu__item_t"><a href="#">About</a></li>
+						<li class="menu__item"><a href="#">Silver Account</a></li>
+						<li class="menu__item"><a href="#">Gold Account</a></li>
+						<li class="menu__item"><a href="#">Platinum Account</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">About us</a><i></i>
+					<ul class="menu__list">
+						<li class="menu__item menu__item_t"><a href="#">How it Works</a></li>
+						<li class="menu__item menu__item_t"><a href="#">About</a></li>
+						<li class="menu__item"><a href="#">Silver Account</a></li>
+						<li class="menu__item"><a href="#">Gold Account</a></li>
+						<li class="menu__item"><a href="#">Platinum Account</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bitcoin mining</a></li>
+			</ul>
+			<!-- END .menu -->
+		</div>
+	</div>
+</header>
+<!-- END .header -->
+
+<!-- BEGIN .slider -->
+	<div class="slider">
+		<div class="cycle cycle-slideshow" 
+    data-cycle-fx="scrollHorz"
+    data-cycle-timeout="3000"
+		data-cycle-pause-on-hover="true"
+		data-cycle-slides=".cycle__item"
+		data-cycle-prev=".cycle__nav_prev"
+		data-cycle-next=".cycle__nav_next"
+		data-cycle-pager-template="<button></button>"
+		data-cycle-pager-active-class="is-active"
+    >
+	    <div class="cycle-pager"></div>
+	    <button class="cycle__nav cycle__nav_prev"></button>
+			<button class="cycle__nav cycle__nav_next"></button>
+			<div class="cycle__item">
+				<h3 class="cycle__title">Start your <span>Cloud Bitcoin!</span></h3>
+				<ul class="cycle__list">
+					<li>No mining software!</li>
+					<li>Payouts are veryfied</li>
+					<li>Start mining instantly</li>
+					<li>All fees are included</li>
+				</ul>
+			</div>
+			<div class="cycle__item">
+				<h3 class="cycle__title">Start your <span>Cloud Bitcoin!</span></h3>
+				<ul class="cycle__list">
+					<li>No mining software!</li>
+					<li>Payouts are veryfied</li>
+					<li>Start mining instantly</li>
+					<li>All fees are included</li>
+				</ul>
+			</div>
+			<div class="cycle__item">
+				<h3 class="cycle__title">Start your <span>Cloud Bitcoin!</span></h3>
+				<ul class="cycle__list">
+					<li>No mining software!</li>
+					<li>Payouts are veryfied</li>
+					<li>Start mining instantly</li>
+					<li>All fees are included</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- END .slider -->
+
+<!-- BEGIN .wrapper -->
+<div class="wrapper">
+
+	<!-- BEGIN .welcome -->
+	<div class="welcome">
+		<a href="#" class="btn">Open an Account today!</a>
+		<h3 class="welcome__title">It`s never been so easy!</h3>
+		<div class="welcome__text">
+			Welcome to <span>CloudyCoin.com</span> The premiere and first <br>bitcoin cloud mining company!
+		</div>
+	</div>
+	<!-- END .welcome -->
+
+	<!-- BEGIN .CALCULATOR -->
+	<div class="calculator">
+		<div class="calculator__wrap">
+			<div class="calculator__col">
+				<p>Ammount to invest</p>
+				<div class="calculator__field">$ 11.000</div>
+			</div>
+			<div class="calculator__col">
+				<p>Estimated BTC payouts*</p>
+				<div class="calculator__field">118 BTC</div>
+			</div>
+			<button class="btn btn_gray">MINING CALCULATOR</button>
+		</div>
+		<p>*Estimated averege BTC payouts are calculated based on average growth of system difficulty.<br>For others scenarious please use our <a href="#">BTC calculator</a></p>
+		<button class="btn btn_bot">CREATE REAL-TIME MINING PORTFOLIO</button>
+	</div>
+	<!-- END .CALCULATOR -->
+
+	<!-- BEGIN .preview -->
+	<div class="account">
+		<div class="account__item">
+			<div class="account__top">
+				<div class="account__status account__status_silver"><i></i>Silver</div>
+			</div>
+			<ul class="account__list">
+				<li>30 Gh/s Mining power</li>
+				<li>Reinvestment option (0-100%)</li>
+				<li>Daily payouts</li>
+				<li>Live customer support</li>
+			</ul>
+			<button class="btn btn_white">ADD PLAN TO MY ACCOUNT</button>
+		</div>
+		<div class="account__item">
+			<div class="account__top">
+				<div class="account__status account__status_gold"><i></i>Gold</div>
+			</div>
+			<ul class="account__list">
+				<li>30 Gh/s Mining power</li>
+				<li>Reinvestment option (0-100%)</li>
+				<li>Daily payouts</li>
+				<li>Live customer support</li>
+			</ul>
+			<button class="btn btn_white">ADD PLAN TO MY ACCOUNT</button>
+		</div>
+		<div class="account__item">
+			<div class="account__top">
+				<div class="account__status account__status_platinum"><i></i>Platinum</div>
+			</div>
+			<ul class="account__list">
+				<li>30 Gh/s Mining power</li>
+				<li>Reinvestment option (0-100%)</li>
+				<li>Daily payouts</li>
+				<li>Live customer support</li>
+			</ul>
+			<button class="btn btn_white">ADD PLAN TO MY ACCOUNT</button>
+		</div>
+	</div>
+	<!-- END .preview -->
 
 </div>
-<!-- END out-->
+<!-- END .wrapper -->
+
+<!-- BEGIN .article -->
+<div class="article">
+	<!-- BEGIN .wrapper -->
+	<div class="wrapper">
+		<div class="article__col">
+			<div class="article__img"><img src="img/arr5.png" alt="img"></div>
+			<h3 class="article__title">How does it work?</h3>
+			<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+			<a href="#">Read more</a>
+		</div>
+		<div class="article__col">
+			<div class="article__img"><img src="img/arr6.png" alt="img"></div>
+			<h3 class="article__title">What we do?</h3>
+			<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+			<a href="#">Read more</a>
+		</div>
+		<div class="article__col">
+			<div class="article__img"><img src="img/arr7.png" alt="img"></div>
+			<h3 class="article__title">Investment program</h3>
+			<p>Lorem ipsum dolor sit amet nec, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+			<a href="#">Read more</a>
+		</div>
+	</div>
+	<!-- END .wrapper -->
+</div>
+<!-- END .article -->
+
+<!-- BEGIN .reviews -->
+<div class="reviews">
+	<div class="wrapper">
+		<h3 class="reviews__title">What others say about us</h3>
+	</div>
+	<div class="reviews__list">
+		<div class="reviews__item">
+			<div class="wrapper">
+				<div class="reviews__col">
+					<img class="reviews__img" src="img/user.png" alt="img">
+					<div class="reviews__user">TheExpert<span>– 20 hours, 13 minutes ago</span></div>
+					<div class="reviews__profession">Designer</div>
+					<p>Hi, it`s infar .using my design, or design others. If you like the design pick the designers to final round. This is a blind contest for a reason</p>
+					<div class="reviews__col">
+						<img class="reviews__img" src="img/user.png" alt="img">
+						<div class="reviews__user">san123<span>– 20 hours, 13 minutes ago</span></div>
+						<div class="reviews__profession">Contest holder</div>
+						<p>Hi, it`s infar .using my design, or design others. If you like the design pick the designers to final round. This is a blind contest for a reason</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="reviews__item">
+			<div class="wrapper">
+				<div class="reviews__col">
+					<img class="reviews__img" src="img/user.png" alt="img">
+					<div class="reviews__user">TheExpert<span>– 20 hours, 13 minutes ago</span></div>
+					<div class="reviews__profession">Designer</div>
+					<p>Hi, it`s infar .using my design, or design others. If you like the design pick the designers to final round. This is a blind contest for a reason</p>
+					<div class="reviews__col">
+						<img class="reviews__img" src="img/user.png" alt="img">
+						<div class="reviews__user">san123<span>– 20 hours, 13 minutes ago</span></div>
+						<div class="reviews__profession">Contest holder</div>
+						<p>Hi, it`s infar .using my design, or design others. If you like the design pick the designers to final round. This is a blind contest for a reason</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END .reviews -->
+
+<!-- BEGIN .footer -->
+<div class="footer">
+	<!-- BEGIN .contacts -->
+	<div class="contacts">
+		<div class="wrapper">
+			<h3 class="contacts__title">CONTACT</h3>
+			<div class="contacts__item contacts__item_address">
+				<i></i>
+				<p>Chernigivska, 32</p>
+				<p>PO Box 21132</p>
+				<p>Kiev 02232 Ukraine</p>
+			</div>
+			<div class="contacts__item contacts__item_phone"><i></i>Phone: +38 097 756 56 02</div>
+			<a href="#" class="contacts__item contacts__item_mail"><i></i>support@yourname.com</a>
+		</div>
+	</div>
+	<!-- END .contacts -->
+	<div class="footer__bot wrapper">
+		<ul class="soc">
+			<li class="soc__item soc__item_f"><i></i></li>
+			<li class="soc__item soc__item_vk"><i></i></li>
+			<li class="soc__item soc__item_tw"><i></i></li>
+		</ul>
+		<ul class="payment">
+			<li class="payment__item payment__item_card"></li>
+			<li class="payment__item payment__item_bank"></li>
+			<li class="payment__item payment__item_bit"></li>
+		</ul>
+	</div>
+</div>
+<!-- END .footer -->
 
 </body>
 </html>
