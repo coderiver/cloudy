@@ -101,6 +101,25 @@
 .calculator__wrap
 	+clr
 
+.calculator__wrap_mod
+	padding: 0 8px 36px
+	font-size: 0
+	.calculator__field
+		margin-left: 68px 
+	.calculator__title
+		display: inline-block
+	.btn_gray
+		float: right
+		padding: 20px 36px 15px 
+		font-size: 17.41px 
+		+box
+
+.calculator__title
+	font-size: 24px
+	line-height: 1
+	font-weight: normal
+	vertical-align: top
+
 .calculator__col
 	margin-right: 50px
 	vertical-align: bottom
@@ -182,6 +201,12 @@
 	i
 		+s(plat-pic)
 
+.account__price
+	padding-top: 20px
+	font-size: 24px
+	font-weight: bold
+	color: #6D7784 
+
 .account__list
 	margin: 25px 0
 	font-size: 18px
@@ -198,6 +223,58 @@
 			margin-top: -3px
 			background: #3D9AED 
 			+border-radius(50%)
+
+.account__list
+	margin: 12px 0
+
+.account__amount
+	span
+		padding-right: 18px
+		font-size: 24px
+
+.select
+	position: relative
+	padding: 0 40px 0 14px
+	height: 52px
+	width: 67px
+	line-height: 50px
+	cursor: pointer
+	display: inline-block
+	background: #e0e6ea
+	+border-radius(5px)
+	+box
+	&:before
+		position: absolute
+		content: ""
+		top: 15px
+		right: 10px
+		+s(m-pic) 
+	.select__text 
+		position: relative
+		width: 100%
+		height: 100%
+		font-size: 32px 
+		line-height: 50px
+		display: block
+		background: none
+
+.select__list 
+	position: absolute
+	left: 0
+	right: 0
+	top: 52px
+	font-weight: normal
+	z-index: 100
+	border: 1px solid #000 
+	background: #fff
+	display: none
+	li
+		font-size: 16px
+		cursor: pointer
+		padding: 0 16px
+		+transition(0.2s)
+		&:hover
+			background: #3d9aed 
 
 // article
 .article
@@ -309,3 +386,131 @@
 	i
 		left: 111px
 		+s(mail-pic)
+
+// .wrap-btn
+.wrap-btn
+	margin-bottom: 98px
+	padding: 0 8px
+	.btn_bot
+		padding-top: 18px
+		padding-bottom: 18px
+		margin-right: 26px
+		width: 580px 
+		+box
+	.btn_white
+		padding-top: 16px
+		padding-bottom: 16px
+		font-size: 21.77px
+
+//table-wrap
+.table-wrap
+	padding-bottom: 65px
+	border-bottom: 1px solid #cccccc
+	.wrapper__title
+		+clr
+	.balance
+		margin-top: -30px
+		float: right
+		+clr
+.table
+	float: left
+	tr
+		td, th
+			height: 48px
+			line-height: 48px
+			text-align: center
+			&:first-child
+				text-align: left
+				
+		.table__row
+			height: 28px
+			line-height: 28px
+			background: #eff2f4
+		td
+			padding: 0 18px 
+			font-size: 14px
+			&.table__row_last
+				text-align: right
+		th
+			color: #6D7784 
+			font-size: 14px
+			font-weight: normal
+			&:first-child
+				padding-left: 5px
+			&.table__row_last
+				width: 11%
+				
+.table_mod
+	tr
+		th, td
+			&:first-child
+				width: 20.3%
+				
+.table-wrap_mod
+	border-top: 1px solid #ccc
+	border-bottom: none 
+
+.balance
+	font-size: 24px
+	display: inline-block
+	span
+		font-size: 36px
+	strong
+		padding: 0 5px 
+		color: #3D9AED 
+
+.l-col1
+	float: left
+	.payment
+		float: none
+		margin-left: 25px
+		margin-top: 38px
+		text-align: left
+		width: auto
+		li
+			position: relative
+			display: inline-block
+	.payment__item
+		position: relative
+		input
+			position: absolute
+			left: -25px
+			top: 12px
+			opacity: 0
+			cursor: pointer
+			z-index: 200
+.payment__radio
+	position: absolute
+	cursor: pointer
+	width: 100%
+	height: 100%
+	z-index: 100
+	span
+		position: absolute
+		left: -25px
+		top: 12px
+		display: block
+		+s(pag-pic)
+
+input[type="radio"]
+	&:checked + span
+		+s(pag-pic_ac)
+
+.l__row
+	font-size: 24px
+	strong
+		width: 252px
+		display: inline-block
+
+.l-col2
+	.btn
+		margin-top: 32px
+		padding: 18px 70px 18px
+
+.calculator__wrap_mar
+	margin: 20px 0 80px
+	.calculator__field
+		margin-right: 20px
+		vertical-align: top
+	.btn
+		padding: 16px

@@ -40,6 +40,21 @@ body
 	width: 960px
 	+clr
 
+.wrapper__title
+	padding: 45px 0 15px 
+	line-height: 1
+	font-size: 24px
+	font-weight: bold
+	span
+		font-weight: normal
+	
+.wrapper__title_top
+	padding: 85px 0 0
+
+.wrapper__title_reg
+	font-weight: normal
+	font-size: 24px
+
 // btn
 .btn 
 	padding: 25px 25px 24px 22px 
@@ -259,15 +274,20 @@ body
 	width: 50%
 	text-align: right
 	+box
+
 .payment__item
 	margin-left: 40px
 	cursor: pointer
 	display: inline-block
+
 	&:first-child
 		margin-left: 0
+
 .payment__item_card
 	+s(card-pic)
+
 .payment__item_bank
 	+s(bank-pic)
+
 .payment__item_bit
 	+s(bit-pic)
