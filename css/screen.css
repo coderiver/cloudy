@@ -72,7 +72,7 @@ body { font-size: 16px; line-height: 1.4; font-family: "myriadpro-regular", Aria
 .menu { float: right; padding-top: 36px; font-size: 18px; }
 .menu li { position: relative; padding-left: 30px; display: inline-block; }
 .menu li:hover .menu__list { visibility: visible; filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transition: 0.1s; -o-transition: 0.1s; -webkit-transition: 0.1s; transition: 0.1s; }
-.menu i { position: absolute; right: -18px; top: 50%; margin-top: -1px; background: url('../img/icons-sc8826d8d08.png') 0 -928px no-repeat; width: 10px; height: 5px; }
+.menu i { position: absolute; right: -18px; top: 50%; margin-top: -4px; background: url('../img/icons-sc8826d8d08.png') 0 -928px no-repeat; width: 10px; height: 5px; }
 .menu a { padding-bottom: 20px; color: #2e363e; text-decoration: none; }
 .menu a.is-active { color: #6d7784; }
 
@@ -84,7 +84,7 @@ body { font-size: 16px; line-height: 1.4; font-family: "myriadpro-regular", Aria
 .menu__list .menu__item a { padding: 7px 9px; width: 100%; display: inline-block; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; font-family: "myriadpro-light", Arial, sans-serif; }
 .menu__list .menu__item a:hover { background: #317bbe; -moz-transition: 0.2s; -o-transition: 0.2s; -webkit-transition: 0.2s; transition: 0.2s; }
 .menu__list .menu__item_t { position: relative; }
-.menu__list .menu__item_t:before { position: absolute; content: ""; top: 18px; right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent white; }
+.menu__list .menu__item_t:before { position: absolute; content: ""; top: 50%; margin-top: -5px; right: 10px; width: 0px; height: 0px; border-style: solid; border-width: 4px 0 4px 4px; border-color: transparent transparent transparent white; }
 .menu__list:before { position: absolute; content: ""; top: -6px; left: 41px; width: 0px; height: 0px; border-style: solid; border-width: 0 5.5px 6px 5.5px; border-color: transparent transparent #3d9aed transparent; }
 .menu__list a { color: white; }
 
@@ -247,11 +247,11 @@ body { font-size: 16px; line-height: 1.4; font-family: "myriadpro-regular", Aria
 .contacts__item_address i { background: url('../img/icons-sc8826d8d08.png') 0 -966px no-repeat; width: 19px; height: 25px; }
 
 .contacts__item_phone { text-align: center; }
-.contacts__item_phone i { left: 54px; background: url('../img/icons-sc8826d8d08.png') 0 -1140px no-repeat; width: 13px; height: 21px; }
+.contacts__item_phone i { position: relative; top: -2px; margin-right: 8px; display: inline-block; background: url('../img/icons-sc8826d8d08.png') 0 -1140px no-repeat; width: 13px; height: 21px; }
 
-.contacts__item_mail { color: white; text-align: right; line-height: 0.6; text-decoration: none; }
+.contacts__item_mail { color: white; text-align: right; line-height: 0.6; text-decoration: none; float: right; padding-left: 28px; width: auto; }
 .contacts__item_mail:hover { text-decoration: underline; }
-.contacts__item_mail i { left: 111px; background: url('../img/icons-sc8826d8d08.png') 0 -943px no-repeat; width: 20px; height: 13px; }
+.contacts__item_mail i { left: 0; top: -3px; background: url('../img/icons-sc8826d8d08.png') 0 -943px no-repeat; width: 20px; height: 13px; }
 
 .wrap-btn { margin-bottom: 98px; padding: 0 8px; }
 .wrap-btn .btn_bot { padding-top: 18px; padding-bottom: 18px; margin-right: 26px; width: 580px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
