@@ -13,6 +13,7 @@
 		color: #FFF 
 		background: url('../img/s-pic.png') no-repeat 0 0
 		+box
+		text-decoration: none
 	.cycle__title
 		font-size: 56px
 		+text-shadow(1px 0 0 #000)
@@ -41,8 +42,9 @@
 			&:before
 				position: absolute
 				content: ""
-				top: 12px
-				left: 0 
+				top: 50%
+				left: 0
+				margin-top: -7px 
 				+s(mark)
 	.cycle-pager
 		position: absolute
@@ -163,7 +165,7 @@
 			i
 				left: -116px
 				top: -19px
-				+s(sil-hov)
+				+s(gol-hov)
 
 		.account__status_gold
 			i
@@ -171,7 +173,7 @@
 
 		.account__status_platinum
 			i
-				+s(plat-hov)
+				+s(gol-hov)
 
 	&:first-child
 		margin-left: 0
@@ -246,7 +248,8 @@
 	&:before
 		position: absolute
 		content: ""
-		top: 15px
+		top: 50%
+		margin-top: -4px 
 		right: 10px
 		+s(m-pic) 
 	.select__text 
